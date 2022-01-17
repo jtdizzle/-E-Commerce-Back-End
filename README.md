@@ -1,4 +1,4 @@
-# eComBE [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# -E-Commerce-Back-End [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
@@ -291,7 +291,7 @@ A video walkthrough is available [here]().
 If you have any questions, feel free to reach out via one of the following:
 
 - Email: [jtdizzle747@yahoo.com](mailto:jtdizzle747.@yahoo.com)
-- Github: @jtdizzle
+- Github: https://github.com/jtdizzle)
 
 ## License
 
