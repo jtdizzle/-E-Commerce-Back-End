@@ -295,4 +295,4 @@ If you have any questions, feel free to reach out:
 
 ## License
 
-This application is distributed under the terms of [MIT License](./LICENSE).
+ [MIT License](./LICENSE).
