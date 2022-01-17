@@ -291,7 +291,7 @@ A video walkthrough is available [here]().
 If you have any questions, feel free to reach out via one of the following:
 
 - Email: [jtdizzle747@yahoo.com](mailto:jtdizzle747.@yahoo.com)
-- Github: https://github.com/jtdizzle)
+- Github: https://github.com/jtdizzle
 
 ## License
 
