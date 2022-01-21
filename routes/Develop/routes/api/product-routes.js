@@ -21,10 +21,10 @@ router.get('/', (req, res) => {
       ]
     }
   )
-    .then(productData => res.json(productData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
+  .then(data => res.json(data))
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
     });
 });
 

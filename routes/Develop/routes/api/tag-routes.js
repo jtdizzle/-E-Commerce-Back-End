@@ -43,7 +43,7 @@ router.post('/', (req, res) => {
   Tag.create({
     tag_name: req.body.tag_name
   })
-    .then(tagData => res.json(tagData))
+    .then(data => res.json(data))
     .catch(err => {
       console.log(err);
       res.status(500).json(err);
@@ -83,7 +83,7 @@ router.delete('/:id', (req, res) => {
   })
     .then(tagData => {
       if (!tagData) {
-        res.status(404).json({ message: 'No Tag found by that ID.' });
+        res.status(404).json({ message: 'TAG ID not found'})
         return;
       }
       res.json(tagData);
