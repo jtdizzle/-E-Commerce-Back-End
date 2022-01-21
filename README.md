@@ -50,7 +50,7 @@ Deletes a tag.
 
 ### Video Walkthrough
 
-A video walkthrough is available [here]().
+A video walkthrough is available [here](https://watch.screencastify.com/v/ZuQ5Oh7v4yX3M61rQgeb).
 
 
 
