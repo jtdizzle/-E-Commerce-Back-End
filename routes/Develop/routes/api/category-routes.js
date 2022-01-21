@@ -6,19 +6,21 @@ const { Category, Product } = require('../../models');
 router.get('/', (req, res) => {
   // find all categories
   // be sure to include its associated Products
-  Category.findAll(
-    {
-      include: {
-        model: Product,
-        attributes: ['product_name']
-      }
-    }
-  )
-    .then(categoryData => res.json(categoryData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
-    });
+  Category.findAll({
+    include: [{
+      model: Product,
+      attributes: ['product_name']
+    }]
+
+  })
+  .then(data => {
+  res.json(data);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  })
+
 });
 
 router.get('/:id', (req, res) => {
@@ -33,10 +35,10 @@ router.get('/:id', (req, res) => {
       attributes: ['category_id']
     }
   })
-    .then(categoryData => res.json(categoryData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
+  .then(data => res.json(data))
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
     });
 });
 
@@ -45,10 +47,10 @@ router.post('/', (req, res) => {
   Category.create({
     category_name: req.body.category_name
   })
-    .then(categoryData => res.json(categoryData))
-    .catch(err => {
-      console.log(err);
-      res.status(500).json(err);
+  .then(data => res.json(data))
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
     });
 });
 
@@ -65,7 +67,7 @@ router.put('/:id', (req, res) => {
     })
     .then(categoryData => {
       if (!categoryData) {
-        res.status(404).json({ message: 'No Category found with that ID.' });
+        res.status(404).json({ message: 'Could not find that ID.' });
         return;
       }
       res.json(categoryData);
@@ -85,7 +87,7 @@ router.delete('/:id', (req, res) => {
   })
     .then(categoryData => {
       if (!categoryData) {
-        res.status(404).json({ message: 'No Category found with that ID.' });
+        res.status(404).json({ message: 'Could not find that ID.' });
         return;
       }
       res.json(categoryData);
