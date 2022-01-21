@@ -1,4 +1,4 @@
-const { Tag } = require('../models');
+const { Tag } = require('../routes/Develop/models');
 
 const tagData = [
   {
